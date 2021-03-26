@@ -1,0 +1,346 @@
+.product-header {
+    background-color: #EBEEEE;
+    padding: 15px 0;
+}
+
+.product-header .breadcrumb {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.product-header .breadcrumb li {
+    display: inline-block;
+    margin-right: 30px;
+    position: relative;
+}
+
+.product-header .breadcrumb li a {
+    color: #9a9a9a;
+    position: relative;
+}
+
+.product-header .breadcrumb li a:hover {
+    color: #4286f4;
+}
+
+.product-header .breadcrumb li a::before {
+    width: 0;
+    transition: all .5s ease;
+    content: '';
+    height: 1px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-color: #4286f4;
+}
+
+.product-header .breadcrumb li a:hover::before {
+    width: 100%;
+}
+
+.product-header .breadcrumb li:last-child a:hover::before {
+    width: 0%;
+}
+
+.product-header .breadcrumb li::after {
+    position: absolute;
+    content: ">";
+    top: 1px;
+    right: -15px;
+    color: #4286f4;
+}
+
+.product-header .breadcrumb li:last-child a {
+    color: #4286f4;
+}
+
+.product-header .breadcrumb li:last-child::after {
+    content: "";
+}
+
+.product-main {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.product-item {
+    background-color: #f6f6f6;
+    text-align: center;
+    height: 500px !important;
+}
+
+.product-item img {
+    height: 100%;
+}
+
+.lSGallery {
+    margin-top: 20px !important;
+}
+
+.lSGallery li {
+    background-color: #f6f6f6;
+    text-align: center;
+    height: 170px !important;
+}
+
+.lSAction a::after {
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+}
+
+.lSAction a.lSPrev::after {
+    content: "\f137";
+}
+
+.lSAction a.lSNext::after {
+    content: "\f138";
+}
+
+.product-input {
+    display: flex;
+}
+
+.product-input-form form {
+    display: flex;
+}
+
+.product-input-form .input-group button {
+    height: 52px !important;
+    border-color: #e0e0e0;
+}
+
+.product-input-form .input-group button:hover {
+    background-color: #4286f4;
+}
+
+.product-input-form .input-group input {
+    width: 50px !important;
+    border-color: #e0e0e0;
+    height: 52px !important;
+}
+
+.product-input-form .submit-btn {
+    background-color: #4286f4;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    z-index: 0;
+    border-radius: 0;
+    outline: 0 !important;
+    box-shadow: none;
+    text-shadow: none;
+    border: 0;
+}
+
+.product-input-form .submit-btn::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    width: 0;
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: .4s;
+    transition-timing-function: ease-out;
+    transition: all ease .4s;
+}
+
+.product-input-form .submit-btn:hover::before {
+    width: 100%;
+    background: #2c2c2c !important;
+}
+
+.product-input-form .wishlist {
+    border: 1px solid #e0e0e0;
+    margin-left: 30px;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: #4286f4;
+    transition: all .4s;
+}
+
+.product-input-form .wishlist:hover {
+    background-color: #4286f4;
+    color: #fff;
+    border: 1px solid #4286f4;
+}
+
+.product-details {
+    margin-top: 20px;
+}
+
+.product-details .product-name {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Jost', sans-serif;
+}
+
+.product-details .product-price {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2c2c2c;
+}
+
+.product-details .product-input {
+    margin-top: 30px;
+}
+
+.product-details .product-description {
+    margin-top: 40px;
+}
+
+.product-details .product-description p {
+    color: #707070;
+}
+
+.product-details .product-description ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.product-details .product-description ul li {
+    margin-bottom: 20px;
+    color: #707070;
+    position: relative;
+    padding-left: 20px;
+}
+
+.product-details .product-description ul li::before {
+    content: '';
+    height: 4px;
+    width: 4px;
+    background-color: #9a9a9a;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.product-details .product-description ul li.availability span {
+    color: #4286f4;
+}
+
+.product-extra-info-list {
+    border-top: 1px solid #ececec;
+}
+
+.product-extra-info-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    border-bottom: 0px !important;
+}
+
+.product-extra-info-list ul li {}
+
+.product-extra-info-list ul li a {
+    display: inline-block;
+    color: #444444;
+    padding: 25px 50px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0px !important;
+    font-family: 'Jost', sans-serif;
+}
+
+.product-extra-info-list ul li a:hover {
+    border: 1px solid transparent !important;
+}
+
+.product-extra-info-list ul li a.active {
+    color: #444444 !important;
+    background-color: #f7f7f7 !important;
+    border: 0px !important;
+    border-bottom: 2px solid #4286f4 !important;
+    border-radius: 0px !important;
+}
+
+.product-extra-info-content {
+    background-color: #f7f7f7;
+    padding: 30px 0;
+}
+
+.details-content p {
+    margin-bottom: 0;
+}
+
+.color-row {
+    width: 10%;
+}
+
+.related-products {
+    padding: 60px 0;
+}
+
+.related-products-heading {
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    font-family: 'Jost', sans-serif;
+}
+
+.related-products-heading::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 80px;
+    background-color: #4286f4;
+}
+
+.related-products-carousel .owl-prev {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    display: block !important;
+    border: 0px solid black;
+    background-color: #fff !important;
+}
+
+.related-products-carousel .owl-next {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    display: block !important;
+    border: 0px solid black;
+    background-color: #fff !important;
+}
+
+.related-products-carousel .owl-prev:hover,
+.related-products-carousel .owl-next:hover {
+    background-color: #4286f4 !important;
+}
+
+.related-products-carousel .owl-prev:hover i,
+.related-products-carousel .owl-next:hover i {
+    color: #fff;
+}
+
+.related-products-carousel .owl-prev i,
+.related-products-carousel .owl-next i {
+    /* transform: scale(1, 6); */
+    color: #ccc;
+}

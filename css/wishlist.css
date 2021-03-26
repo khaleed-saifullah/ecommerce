@@ -1,0 +1,135 @@
+.wishlist-header {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    text-align: center;
+    border-bottom: 1px solid #ebeeee;
+}
+
+.wishlist-header h2 {
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 20px;
+}
+
+.wishlist-header .breadcrumb {
+    background-color: #fff;
+    justify-content: center;
+    border: 1px solid #ebeeee;
+    margin-bottom: 0 !important;
+    display: inline-block;
+    border-radius: 0;
+    position: relative;
+    border-bottom: 0;
+    padding: 8px 27px 9px;
+}
+
+.wishlist-header .breadcrumb li {
+    display: inline-block;
+}
+
+.wishlist-header .breadcrumb::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+
+.wishlist-header .breadcrumb li:first-child {
+    margin-right: 20px;
+    position: relative;
+}
+
+.wishlist-header .breadcrumb li:first-child::after {
+    content: '.';
+    position: absolute;
+    top: 0;
+    font-weight: 500;
+    right: -14px;
+    font-size: 14px !important;
+    color: #2c2c2c;
+}
+
+.wishlist-header .breadcrumb li:first-child a {
+    color: #9a9a9a;
+    transition: all .4s;
+}
+
+.wishlist-header .breadcrumb li:last-child {
+    color: #4286f4;
+}
+
+.wishlist-header .breadcrumb li:first-child a:hover {
+    color: #4286f4;
+}
+
+.wishlist-main {
+    padding-bottom: 80px;
+}
+
+.wishlist-product-image {
+    background-color: #f6f6f6;
+    text-align: center;
+    position: relative;
+}
+
+.wishlist-product-image a {
+    display: inline-block;
+}
+
+.wishlist-product-image img {
+    height: 350px;
+    width: 90%;
+}
+
+.wishlist-product-image-action {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.wishlist-product-image-action i {
+    color: #4286f4;
+    font-size: 20px;
+}
+
+.wishlist-product-des {
+    margin-top: 20px;
+}
+
+.wishlist-product-name {
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+}
+
+.wishlist-product-name a {
+    color: #2c2c2c;
+}
+
+.wishlist-product-name a:hover {
+    transition: all .4s;
+    color: #4286f4;
+}
+
+.wishlist-product-option a {
+    background-color: #4286f4;
+    padding: 10px 40px;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    border: 1px solid transparent;
+    transition: all .4s;
+}
+
+.wishlist-product-option a:hover {
+    background-color: #fff;
+    border: 1px solid #4286f4;
+    color: #4286f4;
+}

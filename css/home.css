@@ -1,0 +1,348 @@
+.category-list h3 {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: normal;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+.category-list h3 i {
+    color: #5480d5;
+    margin-right: 15px;
+}
+
+.category-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #ececec;
+}
+
+.category-list ul li a {
+    padding: 15px 20px;
+    color: #5480d5;
+    display: block;
+    position: relative;
+}
+
+.category-list ul li {
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    z-index: 1;
+}
+
+.category-list ul li:last-child {
+    border-bottom: 0;
+}
+
+.category-list ul li a:hover {
+    background-color: #5480d580;
+    color: #fff;
+}
+
+.category-list ul li ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    transform: translateX(15px);
+    opacity: 0;
+    visibility: hidden;
+    width: 300px;
+    border: 1px solid #e0e0e0;
+    transition: all .3s ease-out;
+    z-index: 999;
+}
+
+.category-list ul li:hover ul {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.category-list ul li a.cat-has-children::after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+    z-index: 2;
+    color: #5480d5;
+    font-size: 10px;
+    line-height: 1;
+    transition: all .3s ease-out;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.category-list ul li a.cat-has-children:hover:after {
+    right: 20px;
+}
+
+.product-search .input-group {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+.product-search .form-control {
+    height: 58px;
+    color: #111;
+    box-shadow: none;
+    border: none;
+    padding: 10px 20px;
+}
+
+.product-search .input-group .btn-group .dropdown button {
+    background-color: #fff;
+    font-size: 16px;
+    padding: 15px 70px 15px 40px;
+    color: #444;
+    position: relative;
+}
+
+.product-search .input-group .btn-group .dropdown button:before {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 1px;
+    background-color: #5480d5;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.product-search .input-group .dropdown-menu {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    width: 100%;
+}
+
+.product-search .input-group .dropdown-menu .dropdown-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.product-search .input-group .dropdown-menu .dropdown-item:hover {
+    background-color: #5480d580;
+    color: #fff;
+}
+
+.product-search .input-group .btn-group:focus {
+    outline: none !important;
+}
+
+.product-search .dropdown-menu.show {
+    top: 10px !important;
+}
+
+.product-search .search-button {
+    background-color: #5480d5;
+    color: #fff;
+}
+
+.sale-carousel {
+    margin-top: 20px;
+}
+
+.sale-carousel .carousel-item {
+    height: 357px;
+}
+
+.sale-carousel .carousel-item img {
+    height: 100%;
+}
+
+.sale-carousel .carousel-control-prev-icon,
+.sale-carousel .carousel-control-next-icon {
+    background-image: none;
+}
+
+.sale-carousel .carousel-control-next-icon:after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    color: #5480d5;
+    font-size: 20px;
+}
+
+.sale-carousel .carousel-control-prev-icon:after {
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    color: #5480d5;
+    font-size: 20px;
+}
+
+.sale-carousel .carousel-control-prev,
+.sale-carousel .carousel-control-next {
+    width: 10% !important;
+    z-index: 0 !important;
+}
+
+.sale-carousel .carousel-indicators li {
+    background-color: #5480d5 !important;
+}
+
+.feature {
+    padding: 50px 0;
+}
+
+.feature-box {
+    background-color: #f6f6f6;
+    padding: 30px 20px;
+    display: flex;
+    border: 1px solid transparent;
+    transition: all .3s ease-out;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px 0px rgba(206, 206, 206, .75);
+}
+
+.feature-box-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    border-right: 1px solid #646464;
+    padding-right: 25px;
+    line-height: 1;
+}
+
+.feature-box-icon i {
+    font-size: 30px;
+}
+
+.feature-box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature-box-content h5 {
+    font-family: 'Jost', sans-serif;
+}
+
+.feature-box-content p {
+    font-size: 14px;
+    color: #9a9797;
+    margin-bottom: 0;
+}
+
+.feature-box:hover {
+    background-color: #fff;
+    border: 1px solid #f6f6f6;
+    box-shadow: 0px 10px 29px 0px rgba(194, 194, 194, .75);
+}
+
+.collection {
+    padding: 50px 0;
+}
+
+.collection-sample-box {
+    background-color: #f6f6f6;
+    overflow: hidden;
+}
+
+.collection-sample-box.big-box {
+    height: 420px;
+}
+
+.collection-sample-box a {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: block;
+    outline: none;
+}
+
+.collection-sample-box-photo {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    text-align: right;
+    right: -32px;
+    bottom: 0px;
+}
+
+.collection-sample-box-photo img {
+    width: 230px;
+    height: 270px;
+    transform: scale(1);
+    transition: .4s;
+}
+
+.collection-sample-box:hover .collection-sample-box-photo img {
+    transform: scale(1.2);
+}
+
+.collection-sample-box-content {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+.collection-sample-box-content h4 {
+    color: #000;
+    font-family: 'Jost', sans-serif;
+}
+
+.collection-sample-box-content span {
+    color: #000;
+    display: block;
+}
+
+.collection-sample-box-content-line {
+    margin-top: 10px;
+    height: 2px;
+    width: 50px;
+    background-color: #5480d5 !important;
+}
+
+.collection-sample-box:hover .collection-sample-box-content h4 {
+    color: #5480d5;
+}
+
+.collection-sample-box.small-box {
+    height: 202px;
+}
+
+.collection-sample-box.small-box .collection-sample-box-photo img {
+    height: 180px;
+    width: 220px;
+}
+
+
+.products {
+    padding: 50px 0;
+}
+
+.products-filter {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.products-filter li {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+}
+
+.products-filter li.active {
+    color: #5480d5;
+    border-bottom: 1px solid #5480d5;
+}
